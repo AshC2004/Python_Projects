@@ -6,7 +6,7 @@ A collection of Python projects showcasing various programming concepts, librari
 
 This repository contains a diverse range of Python projects, from beginner-friendly scripts to more advanced applications. Each project is organized in its own directory with detailed documentation and code examples.
 
-## 📂 Project Structure(Example Structure)
+## 📂 Project Structure(Future Structure)
 
 ```
 Python_Projects/
@@ -114,9 +114,9 @@ Contributions are welcome! If you'd like to contribute:
 ## 📞 Contact
 
 
-Project Link: [https://github.com/AshC2004/Python_Projects](https://github.com/AshC2004/Python_Projects)
+Project Link: [Github Link](https://github.com/AshC2004/Python_Projects)
 
-LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/chhabra-ashish-be/)
+LinkedIn: [LinkedIn Profile](https://www.linkedin.com/in/chhabra-ashish-be/)
 
 ##  Acknowledgments
 
