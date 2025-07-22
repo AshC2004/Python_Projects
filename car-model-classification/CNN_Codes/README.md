@@ -38,7 +38,7 @@ Once the environment is set up, you can run the notebooks.
 # Navigate to the notebooks directory
 cd notebooks/
 
-# Launch Jupyter Lab or Jupyter Notebook
+# Launch Jupyter Notebook
 jupyter lab
 ```
 
