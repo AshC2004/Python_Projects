@@ -1,0 +1,954 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkedIn Sales Pro - Powered by Google Gemini</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>LinkedIn Sales Pro</h2>
+                <span class="gemini-badge">Powered by Google Gemini</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><button class="nav-link active" data-section="landing">Home</button></li>
+                <li><button class="nav-link" data-section="campaigns">Campaigns</button></li>
+                <li><button class="nav-link" data-section="prospects">Prospects</button></li>
+                <li><button class="nav-link" data-section="templates">Templates</button></li>
+                <li><button class="nav-link" data-section="analytics">Analytics</button></li>
+                <li><button class="nav-link" data-section="settings">Settings</button></li>
+                <li><button class="nav-link" data-section="help">Help</button></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Landing Section -->
+        <section id="landing-section" class="section active">
+            <div class="hero-section">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-text">
+                            <h1 class="hero-title">Transform Your LinkedIn Outreach with AI</h1>
+                            <p class="hero-subtitle">Leverage Google Gemini's 1M token context window for hyper-personalized outreach that converts 3x better at 72x lower cost than OpenAI.</p>
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <div class="stat-number">90%</div>
+                                    <div class="stat-label">Cost Reduction</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">8x</div>
+                                    <div class="stat-label">Larger Context</div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number">3x</div>
+                                    <div class="stat-label">Better Conversion</div>
+                                </div>
+                            </div>
+                            <div class="hero-cta">
+                                <button class="btn btn--primary btn--lg" id="get-started-btn">Get Started with Gemini</button>
+                                <div class="cost-comparison">
+                                    <span class="comparison-text">Gemini: $0.00125 vs OpenAI: $0.09 per 1K tokens</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hero-visual">
+                            <div class="gemini-logo">
+                                <div class="gemini-icon">✦</div>
+                                <span>Google Gemini</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <div class="container">
+                    <h2 class="section-title">Why Choose Gemini for LinkedIn Automation?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">💰</div>
+                            <h3>72x More Cost Effective</h3>
+                            <p>Save $200-500 monthly on AI costs compared to OpenAI while getting superior results.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🧠</div>
+                            <h3>1M Token Context Window</h3>
+                            <p>Analyze entire LinkedIn profiles, company data, and recent activity for perfect personalization.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">⚡</div>
+                            <h3>Faster Processing</h3>
+                            <p>Generate personalized messages in ~600ms with advanced AI understanding.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🎯</div>
+                            <h3>95% Personalization Accuracy</h3>
+                            <p>Deep context analysis ensures every message feels genuinely personal.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">📊</div>
+                            <h3>Smart Compatibility Scoring</h3>
+                            <p>AI-powered prospect scoring to prioritize your highest-value opportunities.</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">🛡️</div>
+                            <h3>LinkedIn-Safe Automation</h3>
+                            <p>Built-in compliance features to protect your account with smart rate limiting.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonials-section">
+                <div class="container">
+                    <h2 class="section-title">Success Stories</h2>
+                    <div class="testimonials-grid">
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">"Switched to Gemini and saw 40% higher response rates while spending 85% less on AI costs. The context understanding is incredible!"</div>
+                            <div class="testimonial-author">
+                                <strong>Sarah Chen</strong>
+                                <span>VP Sales, TechFlow</span>
+                            </div>
+                        </div>
+                        <div class="testimonial-card">
+                            <div class="testimonial-text">"The 1M token context means Gemini actually understands our prospects' full backgrounds. Game changer for B2B sales."</div>
+                            <div class="testimonial-author">
+                                <strong>David Kumar</strong>
+                                <span>Head of Growth, StartupForge</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Campaign Setup Section -->
+        <section id="campaigns-section" class="section">
+            <div class="container">
+                <div class="campaign-wizard">
+                    <div class="wizard-header">
+                        <h1>Create New Campaign</h1>
+                        <div class="wizard-steps">
+                            <div class="step active" data-step="1">
+                                <div class="step-number">1</div>
+                                <span>Basics</span>
+                            </div>
+                            <div class="step" data-step="2">
+                                <div class="step-number">2</div>
+                                <span>Criteria</span>
+                            </div>
+                            <div class="step" data-step="3">
+                                <div class="step-number">3</div>
+                                <span>AI Config</span>
+                            </div>
+                            <div class="step" data-step="4">
+                                <div class="step-number">4</div>
+                                <span>Review</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wizard-content">
+                        <!-- Step 1: Campaign Basics -->
+                        <div class="step-content active" id="step-1">
+                            <div class="card">
+                                <div class="card__body">
+                                    <h2>Campaign Basics</h2>
+                                    <div class="form-group">
+                                        <label class="form-label">Campaign Name</label>
+                                        <input type="text" class="form-control" id="campaign-name" placeholder="e.g., Q4 Enterprise Outreach">
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Campaign Description</label>
+                                        <textarea class="form-control" id="campaign-description" rows="3" placeholder="Brief description of campaign goals and target audience"></textarea>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Target Industry</label>
+                                        <select class="form-control" id="target-industry">
+                                            <option value="">Select Industry</option>
+                                            <option value="saas">SaaS & Technology</option>
+                                            <option value="edtech">EdTech & E-learning</option>
+                                            <option value="fintech">FinTech & Banking</option>
+                                            <option value="healthtech">HealthTech & Medical</option>
+                                            <option value="ecommerce">E-commerce & Retail</option>
+                                            <option value="manufacturing">Manufacturing & Industrial</option>
+                                            <option value="services">Professional Services</option>
+                                            <option value="realestate">Real Estate & Construction</option>
+                                            <option value="media">Media & Entertainment</option>
+                                            <option value="logistics">Logistics & Supply Chain</option>
+                                            <option value="energy">Energy & Utilities</option>
+                                            <option value="government">Government & Public Sector</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Company Size</label>
+                                        <select class="form-control" id="company-size">
+                                            <option value="">Select Company Size</option>
+                                            <option value="startup">Startup (1-50 employees)</option>
+                                            <option value="small">Small Business (51-200 employees)</option>
+                                            <option value="midmarket">Mid-Market (201-1000 employees)</option>
+                                            <option value="enterprise">Enterprise (1000+ employees)</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Geographic Targeting</label>
+                                        <select class="form-control" id="location">
+                                            <option value="">Select Location</option>
+                                            <option value="india">India (All Cities)</option>
+                                            <option value="us">United States</option>
+                                            <option value="uk">United Kingdom</option>
+                                            <option value="canada">Canada</option>
+                                            <option value="australia">Australia</option>
+                                            <option value="singapore">Singapore</option>
+                                            <option value="uae">UAE</option>
+                                            <option value="germany">Germany</option>
+                                            <option value="global">Global (All Locations)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Prospect Criteria -->
+                        <div class="step-content" id="step-2">
+                            <div class="card">
+                                <div class="card__body">
+                                    <h2>Prospect Criteria</h2>
+                                    <div class="form-group">
+                                        <label class="form-label">Job Titles/Roles</label>
+                                        <div class="checkbox-group">
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="job-roles" value="ceo">
+                                                <span>C-Level Executive (CEO, CTO, CMO)</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="job-roles" value="vp">
+                                                <span>Vice President</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="job-roles" value="director">
+                                                <span>Director</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="job-roles" value="head">
+                                                <span>Head of Department</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="job-roles" value="manager">
+                                                <span>Manager</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="job-roles" value="senior">
+                                                <span>Senior Professional</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="job-roles" value="founder">
+                                                <span>Founder/Co-founder</span>
+                                            </label>
+                                            <label class="checkbox-label">
+                                                <input type="checkbox" name="job-roles" value="owner">
+                                                <span>Business Owner</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Company Keywords</label>
+                                        <input type="text" class="form-control" id="company-keywords" placeholder="e.g., cloud, AI, automation, SaaS">
+                                        <small class="form-help">Separate multiple keywords with commas</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Experience Level</label>
+                                        <select class="form-control" id="experience-level">
+                                            <option value="">Any Experience Level</option>
+                                            <option value="entry">Entry Level (0-2 years)</option>
+                                            <option value="mid">Mid Level (3-7 years)</option>
+                                            <option value="senior">Senior Level (8-15 years)</option>
+                                            <option value="executive">Executive Level (15+ years)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Gemini AI Configuration -->
+                        <div class="step-content" id="step-3">
+                            <div class="card">
+                                <div class="card__body">
+                                    <h2>Gemini AI Configuration</h2>
+                                    <div class="gemini-features-highlight">
+                                        <div class="feature-highlight">
+                                            <span class="highlight-icon">✦</span>
+                                            <div>
+                                                <strong>1M Token Context</strong>
+                                                <p>Deep analysis of entire LinkedIn profiles and company data</p>
+                                            </div>
+                                        </div>
+                                        <div class="feature-highlight">
+                                            <span class="highlight-icon">💰</span>
+                                            <div>
+                                                <strong>72x Cost Savings</strong>
+                                                <p>$0.00125 vs $0.09 per 1K tokens</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label class="form-label">Brand Voice</label>
+                                        <select class="form-control" id="brand-voice">
+                                            <option value="">Select Brand Voice</option>
+                                            <option value="professional">Professional & Formal</option>
+                                            <option value="friendly">Friendly & Approachable</option>
+                                            <option value="enthusiastic">Enthusiastic & Energetic</option>
+                                            <option value="consultative">Consultative & Expert</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Campaign Goal</label>
+                                        <select class="form-control" id="campaign-goal">
+                                            <option value="">Select Goal</option>
+                                            <option value="demo">Book a Demo</option>
+                                            <option value="call">Schedule a Call</option>
+                                            <option value="content">Download Content</option>
+                                            <option value="trial">Trial Signup</option>
+                                            <option value="partnership">Partnership Discussion</option>
+                                            <option value="hiring">Hiring & Recruitment</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">Personalization Level</label>
+                                        <select class="form-control" id="personalization-level">
+                                            <option value="basic">Basic - Name and company</option>
+                                            <option value="advanced" selected>Advanced - Recent activity and role</option>
+                                            <option value="deep">Deep - Full profile and company analysis</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="form-label">AI Analysis Depth</label>
+                                        <select class="form-control" id="analysis-depth">
+                                            <option value="standard">Standard Analysis</option>
+                                            <option value="comprehensive" selected>Comprehensive Analysis</option>
+                                            <option value="maximum">Maximum Context (1M tokens)</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Step 4: Review & Launch -->
+                        <div class="step-content" id="step-4">
+                            <div class="card">
+                                <div class="card__body">
+                                    <h2>Review & Launch</h2>
+                                    <div class="campaign-summary">
+                                        <h3>Campaign Summary</h3>
+                                        <div class="summary-grid">
+                                            <div class="summary-item">
+                                                <span class="summary-label">Campaign Name:</span>
+                                                <span class="summary-value" id="summary-name">-</span>
+                                            </div>
+                                            <div class="summary-item">
+                                                <span class="summary-label">Target Industry:</span>
+                                                <span class="summary-value" id="summary-industry">-</span>
+                                            </div>
+                                            <div class="summary-item">
+                                                <span class="summary-label">Company Size:</span>
+                                                <span class="summary-value" id="summary-size">-</span>
+                                            </div>
+                                            <div class="summary-item">
+                                                <span class="summary-label">Location:</span>
+                                                <span class="summary-value" id="summary-location">-</span>
+                                            </div>
+                                            <div class="summary-item">
+                                                <span class="summary-label">Brand Voice:</span>
+                                                <span class="summary-value" id="summary-voice">-</span>
+                                            </div>
+                                            <div class="summary-item">
+                                                <span class="summary-label">Campaign Goal:</span>
+                                                <span class="summary-value" id="summary-goal">-</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cost-estimate">
+                                        <h3>Estimated Costs with Gemini</h3>
+                                        <div class="cost-comparison-detailed">
+                                            <div class="cost-item">
+                                                <span class="cost-label">Gemini Cost (1000 prospects):</span>
+                                                <span class="cost-value gemini-cost">$1.85</span>
+                                            </div>
+                                            <div class="cost-item">
+                                                <span class="cost-label">OpenAI Equivalent:</span>
+                                                <span class="cost-value openai-cost">$133.20</span>
+                                            </div>
+                                            <div class="cost-item savings">
+                                                <span class="cost-label">Your Savings:</span>
+                                                <span class="cost-value savings-amount">$131.35</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="compliance-checklist">
+                                        <h3>Compliance Checklist</h3>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" required>
+                                            <span>I understand LinkedIn's Terms of Service and daily limits</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" required>
+                                            <span>I will respect prospect privacy and opt-out requests</span>
+                                        </label>
+                                        <label class="checkbox-label">
+                                            <input type="checkbox" required>
+                                            <span>I will follow recommended outreach limits (max 30/day)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="wizard-footer">
+                        <button class="btn btn--outline" id="prev-step" style="display: none;">Previous</button>
+                        <button class="btn btn--primary" id="next-step">Next Step</button>
+                        <button class="btn btn--primary btn--lg" id="launch-campaign" style="display: none;">Launch Campaign</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Prospects Section -->
+        <section id="prospects-section" class="section">
+            <div class="container">
+                <div class="prospects-header">
+                    <div class="prospects-title">
+                        <h1>AI-Analyzed Prospects</h1>
+                        <div class="prospects-stats">
+                            <span class="stat-badge">156 Total</span>
+                            <span class="stat-badge">89.2 Avg Score</span>
+                            <span class="stat-badge gemini-badge">✦ Gemini Powered</span>
+                        </div>
+                    </div>
+                    <div class="prospects-controls">
+                        <div class="view-toggle">
+                            <button class="view-btn active" data-view="grid">Grid</button>
+                            <button class="view-btn" data-view="list">List</button>
+                        </div>
+                        <button class="btn btn--outline">Export</button>
+                    </div>
+                </div>
+
+                <div class="prospects-filters">
+                    <div class="filter-group">
+                        <select class="form-control" id="score-filter">
+                            <option value="">All Scores</option>
+                            <option value="90-100">90-100 (Excellent)</option>
+                            <option value="80-89">80-89 (Good)</option>
+                            <option value="70-79">70-79 (Fair)</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <select class="form-control" id="industry-filter">
+                            <option value="">All Industries</option>
+                            <option value="tech">Technology</option>
+                            <option value="marketing">Marketing</option>
+                            <option value="sales">Sales</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <input type="text" class="form-control" id="search-prospects" placeholder="Search prospects...">
+                    </div>
+                </div>
+
+                <div class="prospects-grid" id="prospects-container">
+                    <!-- Prospects will be populated by JavaScript -->
+                </div>
+
+                <div class="bulk-actions">
+                    <div class="bulk-selected">
+                        <span id="selected-count">0</span> prospects selected
+                    </div>
+                    <div class="bulk-buttons">
+                        <button class="btn btn--outline" id="bulk-generate">Generate Messages</button>
+                        <button class="btn btn--outline" id="bulk-export">Export Selected</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Templates Section -->
+        <section id="templates-section" class="section">
+            <div class="container">
+                <div class="templates-header">
+                    <h1>Message Templates</h1>
+                    <div class="gemini-indicator">
+                        <span class="gemini-badge">✦ Generated by Gemini AI</span>
+                    </div>
+                </div>
+
+                <div class="templates-tabs">
+                    <button class="tab-btn active" data-tab="connection">Connection Requests</button>
+                    <button class="tab-btn" data-tab="followup">Follow-up Messages</button>
+                    <button class="tab-btn" data-tab="custom">Custom Templates</button>
+                </div>
+
+                <div class="tab-content active" id="connection-tab">
+                    <div class="template-generator">
+                        <div class="generator-controls">
+                            <div class="form-group">
+                                <label class="form-label">Select Prospect</label>
+                                <select class="form-control" id="template-prospect">
+                                    <option value="">Choose prospect for personalization</option>
+                                    <option value="1">Anjali Mehta - HR Director</option>
+                                    <option value="2">Rahul Kumar - CTO</option>
+                                    <option value="3">Priya Sharma - VP Marketing</option>
+                                </select>
+                            </div>
+                            <button class="btn btn--primary" id="generate-messages">Generate Personalized Messages</button>
+                        </div>
+
+                        <div class="generated-messages" id="message-variations">
+                            <!-- Message variations will be populated here -->
+                        </div>
+                    </div>
+
+                    <div class="template-library">
+                        <h3>Base Templates</h3>
+                        <div class="template-cards">
+                            <div class="template-card">
+                                <div class="template-header">
+                                    <h4>Professional Introduction</h4>
+                                    <div class="template-stats">
+                                        <span class="stat">41% avg response rate</span>
+                                    </div>
+                                </div>
+                                <div class="template-body">
+                                    <p>Hi {{name}}, noticed your recent work on {{recent_topic}} at {{company}}. I work with {{target_role}} helping them {{value_proposition}}. Would love to connect and share insights!</p>
+                                </div>
+                                <div class="template-footer">
+                                    <button class="btn btn--outline btn--sm">Use Template</button>
+                                    <button class="btn btn--outline btn--sm">Customize</button>
+                                </div>
+                            </div>
+
+                            <div class="template-card">
+                                <div class="template-header">
+                                    <h4>Value-First Approach</h4>
+                                    <div class="template-stats">
+                                        <span class="stat">38% avg response rate</span>
+                                    </div>
+                                </div>
+                                <div class="template-body">
+                                    <p>Hello {{name}}, saw your post about {{topic}} - completely agree! I've helped {{similar_companies}} achieve {{specific_result}}. Worth connecting to share insights?</p>
+                                </div>
+                                <div class="template-footer">
+                                    <button class="btn btn--outline btn--sm">Use Template</button>
+                                    <button class="btn btn--outline btn--sm">Customize</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="followup-tab">
+                    <div class="template-cards">
+                        <div class="template-card">
+                            <div class="template-header">
+                                <h4>Achievement Follow-up</h4>
+                                <div class="template-stats">
+                                    <span class="stat">28% avg response rate</span>
+                                </div>
+                            </div>
+                            <div class="template-body">
+                                <p>Thanks for connecting, {{name}}! Saw that {{company}} recently {{achievement}}. We've helped similar companies achieve {{specific_benefit}}. Worth a quick chat?</p>
+                            </div>
+                            <div class="template-footer">
+                                <button class="btn btn--outline btn--sm">Use Template</button>
+                                <button class="btn btn--outline btn--sm">Customize</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="custom-tab">
+                    <div class="custom-template-editor">
+                        <h3>Create Custom Template</h3>
+                        <div class="form-group">
+                            <label class="form-label">Template Name</label>
+                            <input type="text" class="form-control" placeholder="e.g., Industry Expert Outreach">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">Message Template</label>
+                            <textarea class="form-control" rows="4" placeholder="Write your template using {{variables}} for personalization"></textarea>
+                        </div>
+                        <div class="available-variables">
+                            <h4>Available Variables</h4>
+                            <div class="variables-grid">
+                                <code>{{name}}</code>
+                                <code>{{company}}</code>
+                                <code>{{title}}</code>
+                                <code>{{location}}</code>
+                                <code>{{recent_activity}}</code>
+                                <code>{{industry}}</code>
+                            </div>
+                        </div>
+                        <button class="btn btn--primary">Save Template</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Analytics Section -->
+        <section id="analytics-section" class="section">
+            <div class="container">
+                <div class="analytics-header">
+                    <h1>Campaign Analytics</h1>
+                    <div class="time-range">
+                        <select class="form-control">
+                            <option value="7">Last 7 days</option>
+                            <option value="30" selected>Last 30 days</option>
+                            <option value="90">Last 90 days</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-icon">👥</div>
+                        <div class="metric-content">
+                            <div class="metric-value">156</div>
+                            <div class="metric-label">Total Prospects</div>
+                            <div class="metric-change positive">+23% this month</div>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">✉️</div>
+                        <div class="metric-content">
+                            <div class="metric-value">98</div>
+                            <div class="metric-label">Messages Sent</div>
+                            <div class="metric-change positive">+15% this month</div>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">✅</div>
+                        <div class="metric-content">
+                            <div class="metric-value">42%</div>
+                            <div class="metric-label">Acceptance Rate</div>
+                            <div class="metric-change positive">+8% this month</div>
+                        </div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-icon">📅</div>
+                        <div class="metric-content">
+                            <div class="metric-value">12</div>
+                            <div class="metric-label">Meetings Booked</div>
+                            <div class="metric-change positive">+33% this month</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analytics-charts">
+                    <div class="chart-row">
+                        <div class="chart-container">
+                            <h3>Response Rate Over Time</h3>
+                            <div class="chart-wrapper" style="position: relative; height: 300px;">
+                                <canvas id="responseChart"></canvas>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <h3>Message Performance</h3>
+                            <div class="chart-wrapper" style="position: relative; height: 300px;">
+                                <canvas id="performanceChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cost-savings-section">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Gemini Cost Savings</h3>
+                            <div class="savings-grid">
+                                <div class="savings-item">
+                                    <div class="savings-label">This Month</div>
+                                    <div class="savings-value">$131.35</div>
+                                    <div class="savings-comparison">vs $133.20 with OpenAI</div>
+                                </div>
+                                <div class="savings-item">
+                                    <div class="savings-label">Total Saved</div>
+                                    <div class="savings-value">$1,247.80</div>
+                                    <div class="savings-comparison">72x cost reduction</div>
+                                </div>
+                                <div class="savings-item">
+                                    <div class="savings-label">ROI</div>
+                                    <div class="savings-value">485%</div>
+                                    <div class="savings-comparison">Powered by Gemini</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings-section" class="section">
+            <div class="container">
+                <h1>Settings</h1>
+
+                <div class="settings-tabs">
+                    <button class="tab-btn active" data-tab="api">API Configuration</button>
+                    <button class="tab-btn" data-tab="limits">Rate Limits</button>
+                    <button class="tab-btn" data-tab="account">Account</button>
+                </div>
+
+                <div class="tab-content active" id="api-tab">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Google Gemini API Configuration</h3>
+                            <div class="provider-selection">
+                                <h4>AI Provider</h4>
+                                <div class="provider-options">
+                                    <label class="provider-option selected">
+                                        <input type="radio" name="provider" value="gemini" checked>
+                                        <div class="provider-card">
+                                            <div class="provider-header">
+                                                <span class="provider-name">Google Gemini</span>
+                                                <span class="provider-badge recommended">Recommended</span>
+                                            </div>
+                                            <div class="provider-benefits">
+                                                <div class="benefit">✦ 1M token context</div>
+                                                <div class="benefit">💰 72x cheaper</div>
+                                                <div class="benefit">⚡ Faster processing</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                    <label class="provider-option">
+                                        <input type="radio" name="provider" value="openai">
+                                        <div class="provider-card">
+                                            <div class="provider-header">
+                                                <span class="provider-name">OpenAI</span>
+                                                <span class="provider-badge expensive">Expensive</span>
+                                            </div>
+                                            <div class="provider-benefits">
+                                                <div class="benefit">📝 128K tokens</div>
+                                                <div class="benefit">💸 $0.09 per 1K</div>
+                                                <div class="benefit">🐌 Slower</div>
+                                            </div>
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label">
+                                    Google Gemini API Key
+                                    <span class="api-status" id="api-status">Not configured</span>
+                                </label>
+                                <input type="password" class="form-control" id="gemini-api-key" placeholder="Enter your Gemini API key">
+                                <small class="form-help">
+                                    Get your API key from <a href="https://makersuite.google.com/app/apikey" target="_blank">Google AI Studio</a>
+                                </small>
+                            </div>
+
+                            <button class="btn btn--primary" id="test-api">Test Connection</button>
+                            <button class="btn btn--outline" id="save-api">Save Configuration</button>
+
+                            <div class="api-usage" id="api-usage-section" style="display: none;">
+                                <h4>API Usage Statistics</h4>
+                                <div class="usage-stats">
+                                    <div class="usage-item">
+                                        <span class="usage-label">Requests Today:</span>
+                                        <span class="usage-value">247</span>
+                                    </div>
+                                    <div class="usage-item">
+                                        <span class="usage-label">Tokens Used:</span>
+                                        <span class="usage-value">1.2M</span>
+                                    </div>
+                                    <div class="usage-item">
+                                        <span class="usage-label">Cost Today:</span>
+                                        <span class="usage-value">$1.50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="limits-tab">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Rate Limiting & Safety</h3>
+                            <div class="form-group">
+                                <label class="form-label">Daily Connection Requests</label>
+                                <select class="form-control">
+                                    <option value="10">10 per day (Conservative)</option>
+                                    <option value="20">20 per day (Moderate)</option>
+                                    <option value="30" selected>30 per day (Recommended Max)</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Message Delay</label>
+                                <select class="form-control">
+                                    <option value="30">30 seconds</option>
+                                    <option value="60" selected>1 minute</option>
+                                    <option value="120">2 minutes</option>
+                                    <option value="300">5 minutes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" checked>
+                                    <span>Enable LinkedIn-safe automation</span>
+                                </label>
+                                <small class="form-help">Automatically follows LinkedIn's best practices</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content" id="account-tab">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>Account Settings</h3>
+                            <div class="form-group">
+                                <label class="form-label">Email</label>
+                                <input type="email" class="form-control" value="user@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">LinkedIn Profile URL</label>
+                                <input type="url" class="form-control" placeholder="https://linkedin.com/in/yourprofile">
+                            </div>
+                            <button class="btn btn--primary">Update Profile</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Help Section -->
+        <section id="help-section" class="section">
+            <div class="container">
+                <h1>Help & Documentation</h1>
+
+                <div class="help-categories">
+                    <div class="help-category">
+                        <h3>🚀 Getting Started with Gemini</h3>
+                        <div class="help-items">
+                            <a href="#" class="help-item">
+                                <h4>Setting up your Gemini API key</h4>
+                                <p>Step-by-step guide to configure Google Gemini for maximum cost savings</p>
+                            </a>
+                            <a href="#" class="help-item">
+                                <h4>Creating your first campaign</h4>
+                                <p>Learn how to set up effective LinkedIn outreach campaigns</p>
+                            </a>
+                            <a href="#" class="help-item">
+                                <h4>Understanding Gemini's advantages</h4>
+                                <p>Why Gemini is 72x cheaper and more effective than OpenAI</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="help-category">
+                        <h3>📊 Best Practices</h3>
+                        <div class="help-items">
+                            <a href="#" class="help-item">
+                                <h4>LinkedIn-safe automation</h4>
+                                <p>How to automate outreach while staying compliant with LinkedIn's ToS</p>
+                            </a>
+                            <a href="#" class="help-item">
+                                <h4>Message personalization tips</h4>
+                                <p>Leverage Gemini's 1M context for perfect personalization</p>
+                            </a>
+                            <a href="#" class="help-item">
+                                <h4>Optimizing response rates</h4>
+                                <p>Advanced strategies for higher acceptance and reply rates</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="help-category">
+                        <h3>⚖️ Compliance & Legal</h3>
+                        <div class="help-items">
+                            <a href="#" class="help-item">
+                                <h4>LinkedIn Terms of Service</h4>
+                                <p>Understanding and complying with LinkedIn's automation policies</p>
+                            </a>
+                            <a href="#" class="help-item">
+                                <h4>Data privacy and GDPR</h4>
+                                <p>How we handle prospect data and ensure privacy compliance</p>
+                            </a>
+                            <a href="#" class="help-item">
+                                <h4>Opt-out management</h4>
+                                <p>Respecting prospect preferences and managing opt-out requests</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="help-category">
+                        <h3>🔧 Technical Support</h3>
+                        <div class="help-items">
+                            <a href="#" class="help-item">
+                                <h4>API troubleshooting</h4>
+                                <p>Common issues with Gemini API setup and solutions</p>
+                            </a>
+                            <a href="#" class="help-item">
+                                <h4>Rate limiting guide</h4>
+                                <p>Understanding and configuring safe automation limits</p>
+                            </a>
+                            <a href="#" class="help-item">
+                                <h4>Contact support</h4>
+                                <p>Get help from our technical support team</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="compliance-notice">
+                    <div class="card">
+                        <div class="card__body">
+                            <h3>⚠️ Important Compliance Notice</h3>
+                            <p>This tool is designed to assist with LinkedIn outreach while maintaining compliance with LinkedIn's Terms of Service. Users are responsible for:</p>
+                            <ul>
+                                <li>Following LinkedIn's daily limits and best practices</li>
+                                <li>Respecting prospect privacy and opt-out requests</li>
+                                <li>Using automation responsibly and ethically</li>
+                                <li>Monitoring campaign performance and adjusting as needed</li>
+                            </ul>
+                            <p>We strongly recommend manual review of all automated messages before sending.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-spinner">
+            <div class="spinner"></div>
+            <p>Processing with Gemini AI...</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
