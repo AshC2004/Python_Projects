@@ -60,3 +60,9 @@ The current system relies on a set of high-quality, general Excel questions and 
 -   **Prompt Refinement:** We can continuously update the system prompts based on observed system behavior and user feedback to improve evaluation quality and conversational flow.
 -   **Question Bank Expansion:** The `INTERVIEW_QUESTIONS` array can be expanded and categorized by difficulty or topic (e.g., Formulas, Data Visualization, Macros). The system could then be programmed to dynamically select questions, creating a more adaptive interview experience.
 -   **Transcript Analysis:** In a production environment, we could collect anonymized interview transcripts. Analyzing this data would help us identify common candidate mistakes, confusing questions, and areas where the AI's evaluation could be improved. This data provides an invaluable feedback loop for enhancing the entire system.
+
+  
+
+
+https://github.com/user-attachments/assets/804354fc-08f8-4a95-b85e-807b6b50bc2b
+
