@@ -1,0 +1,5 @@
+{
+  "name": "Excel Interviewer",
+  "description": "An automated mock interviewer to help candidates practice and assess their Microsoft Excel skills through a structured, conversational interview.",
+  "requestFramePermissions": []
+}
